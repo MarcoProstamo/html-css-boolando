@@ -98,20 +98,6 @@ li {
   justify-content: space-between;
 }
 
-.card-container.bonus {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-100%, -50%);
-}
-.card > p.bonus {
-  width: 250px;
-  position: absolute;
-  top: 0;
-  left: 101%;
-  text-align: center;
-}
-
 .card {
   height: 350px;
   width: 250px;
@@ -269,4 +255,23 @@ li {
 
 .page-footer nav i.link-item {
   margin: 0 2px;
+}
+
+/* Bonus */
+.page-footer.bonus {
+  margin-top: 100vh;
+}
+
+.card-container.bonus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100%, -50%);
+}
+.card > p.bonus {
+  width: 250px;
+  position: absolute;
+  top: 0;
+  left: 101%;
+  text-align: center;
 }
