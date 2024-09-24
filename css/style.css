@@ -98,6 +98,20 @@ li {
   justify-content: space-between;
 }
 
+.card-container.bonus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100%, -50%);
+}
+.card > p.bonus {
+  width: 250px;
+  position: absolute;
+  top: 0;
+  left: 101%;
+  text-align: center;
+}
+
 .card {
   height: 350px;
   width: 250px;
@@ -156,7 +170,6 @@ li {
   color: red;
   font-weight: bold;
   margin-right: 3px;
-  font-size: 0.6;
 }
 
 .model-1b,
