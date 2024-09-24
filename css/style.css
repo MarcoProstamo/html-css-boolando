@@ -58,9 +58,13 @@ li {
 .page-header {
   background-color: #fe6900;
   color: white;
-  position: sticky;
-  min-height: 50px;
-  margin-bottom: 2rem;
+  position: fixed;
+  height: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .page-header > .container {
@@ -83,12 +87,15 @@ li {
 
 /* Main */
 
+.page-main {
+  margin-top: calc(2rem + 50px);
+}
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
 }
 
 .card {
