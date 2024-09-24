@@ -25,6 +25,7 @@ li {
   width: 1000px;
   max-width: 100%;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .col-20 {
@@ -78,6 +79,142 @@ li {
 
 .profile-item {
   margin: 0 10px;
+}
+
+/* Main */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+}
+
+.card {
+  height: 350px;
+  width: calc(33% - 5px);
+  position: relative;
+}
+
+.card > img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.discount {
+  background-color: red;
+  color: white;
+  padding: 3px 7px;
+  position: absolute;
+  bottom: 35%;
+  font-size: 0.6rem;
+}
+
+.eco-friendly {
+  background-color: #008000;
+  color: white;
+  padding: 3px 7px;
+  position: absolute;
+  bottom: 35%;
+  left: calc(17% + 5px);
+  font-size: 0.6rem;
+}
+
+.heart {
+  background-color: white;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 10px;
+  position: absolute;
+  top: 1%;
+  right: 0;
+  padding: 5px;
+}
+
+.brand-name {
+  font-size: 0.6rem;
+}
+
+.cloth-name {
+  text-transform: uppercase;
+}
+
+.price {
+  color: red;
+  font-weight: bold;
+  margin-right: 3px;
+}
+
+.model-1b,
+.model-2b,
+.model-3b,
+.model-4b,
+.model-5b,
+.model-6b {
+  display: none;
+}
+
+/* Hover Main */
+
+.heart:hover {
+  color: red;
+}
+
+/* First Image Swap */
+.card.model-1:hover img.model-1 {
+  display: none;
+}
+
+.card.model-1:hover img.model-1b {
+  display: block;
+}
+
+/* Second Image Swap */
+.card.model-2:hover img.model-2 {
+  display: none;
+}
+
+.card.model-2:hover img.model-2b {
+  display: block;
+}
+
+/* Third Image Swap */
+.card.model-3:hover img.model-3 {
+  display: none;
+}
+
+.card.model-3:hover img.model-3b {
+  display: block;
+}
+
+/* Fourth Image Swap */
+.card.model-4:hover img.model-4 {
+  display: none;
+}
+
+.card.model-4:hover img.model-4b {
+  display: block;
+}
+
+/* Fifth Image Swap */
+.card.model-5:hover img.model-5 {
+  display: none;
+}
+
+.card.model-5:hover img.model-5b {
+  display: block;
+}
+
+/* Sixth Image Swap */
+.card.model-6:hover img.model-6 {
+  display: none;
+}
+
+.card.model-6:hover img.model-6b {
+  display: block;
 }
 
 /* Footer */
